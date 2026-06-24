@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root{
+    --bg:#0b1120;
+    --card:#111827;
+    --card2:#1f2937;
+    --border:#334155;
+    --text:#f8fafc;
+    --muted:#94a3b8;
+    --accent:#38bdf8;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    overflow-y:auto;
+    overflow-x:hidden;
+
+    background:
+        radial-gradient(circle at top left,#1e293b 0%,transparent 40%),
+        radial-gradient(circle at top right,#312e81 0%,transparent 40%),
+        var(--bg);
+
+    color:var(--text);
+}
+
+.container{
+    width:95%;
+    max-width:1400px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+h1{
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:var(--muted);
+    margin-bottom:30px;
+}
+
+/* SEARCH CARD */
+
+.search-card{
+    background:rgba(17,24,39,.7);
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.05);
+
+    border-radius:24px;
+    padding:30px;
+
+    margin-bottom:30px;
+}
+
+form{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+input{
+    flex:1;
+    min-width:280px;
+
+    padding:16px 18px;
+
+    background:#0f172a;
+
+    border:1px solid #334155;
+    border-radius:14px;
+
+    color:white;
+    font-size:15px;
+}
+
+input:focus{
+    outline:none;
+    border-color:var(--accent);
+    box-shadow:0 0 15px rgba(56,189,248,.2);
+}
+
+button{
+    padding:16px 28px;
+
+    border:none;
+    border-radius:14px;
+
+    background:linear-gradient(
+        135deg,
+        #38bdf8,
+        #6366f1
+    );
+
+    color:white;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+}
+
+/* PROFILE */
+
+.profile-card{
+    background:rgba(17,24,39,.75);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.05);
+
+    border-radius:24px;
+
+    padding:30px;
+
+    margin-bottom:30px;
+}
+
+.profile-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.profile-info h2{
+    font-size:2rem;
+}
+
+.rating-box{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.stat{
+    background:#0f172a;
+    border:1px solid #334155;
+
+    border-radius:14px;
+
+    padding:15px 20px;
+}
+
+.stat-label{
+    color:var(--muted);
+    font-size:.8rem;
+}
+
+.stat-value{
+    font-size:1.2rem;
+    font-weight:700;
+}
+
+/* TABLE */
+
+.table-card{
+    background:rgba(17,24,39,.75);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.05);
+}
+
+.table-wrapper{
+    overflow:visible;
+    max-height:none;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+thead{
+    position:static;
+}
+
+thead th{
+    background:#111827;
+
+    padding:18px;
+
+    text-align:left;
+
+    border-bottom:1px solid var(--border);
+
+    font-size:.9rem;
+    letter-spacing:.5px;
+}
+
+tbody tr{
+    transition:.2s;
+}
+
+tbody tr:hover{
+    background:#1e293b;
+}
+
+tbody td{
+    padding:18px;
+    border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.contest-name{
+    font-weight:600;
+}
+
+.positive{
+    color:#22c55e;
+    font-weight:700;
+}
+
+.negative{
+    color:#ef4444;
+    font-weight:700;
+}
+
+ 
+
+.legendary{
+    color:#ff3333;
+    font-weight:700;
+}
+
+/* PERFORMANCE BADGE */
+
+.badge{
+    padding:8px 12px;
+    border-radius:999px;
+    font-weight:600;
+    display:inline-block;
+}
+
+/* SCROLLBAR */
+
+ 
+td {
+    color: white;
+}
+
+.positive {
+    color: #22c55e !important;
+    font-weight: 700;
+}
+
+.negative {
+    color: #ef4444 !important;
+    font-weight: 700;
+}
+.gray{
+    color:#808080;
+}
+
+.green{
+    color:#008000;
+}
+
+.cyan{
+    color:#03A89E;
+}
+
+.blue{
+    color:#0606fc !important;
+}
+
+.pink{
+    color:#AA00AA;
+}
+
+.orange{
+    color:#FF8C00;
+}
+
+.red{
+    color:#FF0000;
+}
+
+.legendary{
+    color:#FF0000;
+    font-weight:700;
+}
+
+.stat-value{
+    font-size:1.4rem;
+    font-weight:700;
+}
+
+td strong{
+    font-size:1rem;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    h1{
+        font-size:2rem;
+    }
+
+    .profile-header{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    td,th{
+        font-size:.85rem;
+    }
+}

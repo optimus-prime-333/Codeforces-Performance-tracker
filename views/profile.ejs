@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= user.handle %></title>
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="profile-card">
+
+    <div class="profile-header">
+
+      <div class="profile-info">
+
+        <h2 class="<%= ratingColor %>">
+          <%= user.handle %>
+        </h2>
+ 
+
+      </div>
+
+      <div class="rating-box">
+
+        <div class="stat">
+          <div class="stat-label">
+            Current Rating
+          </div>
+
+           <div class="stat-value <%= ratingColor %>">
+            <%= user.rating || "Unrated" %>
+          </div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-label">
+            Max Rating
+          </div>
+
+          <div class="stat-value <%= maxRatingColor %>">
+            <%= user.maxRating || "-" %>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="table-card">
+
+    <div class="table-wrapper">
+
+      <table>
+
+        <thead>
+
+          <tr>
+            <th>Contest</th>
+            <th>Rank</th>
+            <th>Old</th>
+            <th>New</th>
+            <th>Change</th>
+            <th>Performance</th>
+          </tr>
+
+        </thead>
+
+        <tbody>
+
+          <% contests.forEach(contest => { %>
+
+            <tr>
+
+              <td class="contest-name">
+                <%= contest.contestName %>
+              </td>
+
+              <td>
+                <%= contest.rank %>
+              </td>
+
+             <td>
+    <span class="<%= contest.oldColor %>">
+        <strong>
+            <%= contest.oldRating %>
+        </strong>
+    </span>
+</td>
+
+              <td>
+    <span class="<%= contest.newColor %>">
+        <strong>
+            <%= contest.newRating %>
+        </strong>
+    </span>
+</td>
+
+              <td class="<%= contest.ratingChange >= 0 ? 'positive' : 'negative' %>">
+
+                <%= contest.ratingChange >= 0 ? '+' : '' %>
+                <%= contest.ratingChange %>
+
+              </td>
+
+             <td>
+    <span class="<%= contest.perfColor %>">
+        <strong>
+            <%= contest.performance %>
+        </strong>
+    </span>
+</td>
+
+            </tr>
+
+          <% }) %>
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
