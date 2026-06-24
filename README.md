@@ -97,7 +97,7 @@ http://localhost:3000
 │   ├── css/
 │   └── images/
 ├── views/
-│   ├── index.ejs
+│   ├── home.ejs
 │   └── result.ejs
 ├── server.js
 ├── package.json
