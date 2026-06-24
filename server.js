@@ -37,7 +37,9 @@ function getColor(rating) {
 app.get("/", (req, res) => {
     res.render("home");
 });
-
+app.get("/profile", (req, res) => {
+    res.redirect("/");
+});
 /*
 |--------------------------------------------------------------------------
 | Profile Page
