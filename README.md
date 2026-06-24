@@ -65,8 +65,8 @@ A modern web application that helps competitive programmers analyze their Codefo
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-cd YOUR_REPOSITORY
+git clone https://github.com/optimus-prime-333/Codeforces-Performance-tracker.git
+cd Codeforces-Performance-tracker
 ```
 
 ### Install Dependencies
