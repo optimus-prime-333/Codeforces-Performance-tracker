@@ -1,96 +1,142 @@
-# Codeforces Performance Tracker
+# 🚀 Codeforces Performance Tracker
 
-A modern Node.js and Express.js web application that displays a Codeforces user's contest history and estimated performance for each contest.
+A modern web application that helps competitive programmers analyze their Codeforces contest performance, rating progression, and estimated performance across contests.
 
-## Features
+## 🌐 Live Demo
 
-* Search any Codeforces handle
-* View contest history from newest to oldest
-* Display old rating and new rating
-* Show rating change for every contest
-* Estimated performance calculation
-* Actual Codeforces rating colors
+**Try it here:** https://codeforces-performance-tracker.onrender.com/profile
 
-### Rating Colors
+---
 
-* Gray → Newbie
-* Green → Pupil
-* Cyan → Specialist
-* Blue → Expert
-* Pink → Candidate Master
-* Orange → Master
-* Red → Grandmaster
-* Legendary → Legendary Grandmaster
+## ✨ Features
 
-## Tech Stack
+* 🔍 Search any Codeforces handle
+* 📊 View complete contest history
+* 📈 Track rating progression over time
+* 🎯 Display estimated performance for every contest
+* 🔄 Show old rating, new rating, and rating changes
+* 🏆 Uses official Codeforces rating colors
+* 📱 Responsive and modern UI
+* ⚡ Fast data fetching using the Codeforces API
+
+### Codeforces Rating Colors
+
+| Rank                      | Color  |
+| ------------------------- | ------ |
+| Newbie                    | Gray   |
+| Pupil                     | Green  |
+| Specialist                | Cyan   |
+| Expert                    | Blue   |
+| Candidate Master          | Pink   |
+| Master                    | Orange |
+| International Master      | Orange |
+| Grandmaster               | Red    |
+| International Grandmaster | Red    |
+| Legendary Grandmaster     | Red    |
+
+---
+
+## 📸 Screenshots
+
+### Home Page
+
+<img width="1536" height="842" alt="Screenshot (43)" src="https://github.com/user-attachments/assets/02898273-33d7-4f87-a472-4cb59fc42d46" />
+
+
+### Contest History
+
+ <img width="1442" height="875" alt="image (1)" src="https://github.com/user-attachments/assets/8d272d79-63b5-4012-9f34-2e942ca77c83" />
+---
+
+## 🛠 Tech Stack
 
 * Node.js
 * Express.js
 * EJS
 * Axios
+* HTML5
+* CSS3
 * Codeforces API
 
-## Installation
+---
 
-Clone the repository:
+## 🚀 Getting Started
 
-```bash
-git clone https://github.com/your-username/codeforces-performance-tracker.git
-```
-
-Move into the project directory:
+### Clone the Repository
 
 ```bash
-cd codeforces-performance-tracker
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+cd YOUR_REPOSITORY
 ```
 
-Install dependencies:
+### Install Dependencies
 
 ```bash
 npm install
 ```
 
-Start the server:
+### Run the Application
 
 ```bash
 npm start
 ```
 
-Open your browser:
+Open your browser and visit:
 
 ```text
 http://localhost:3000
 ```
 
-## Project Structure
+---
+
+## 📂 Project Structure
 
 ```text
+.
 ├── public/
-│   └── style.css
-├── services/
-│   └── performance.js
+│   ├── css/
+│   └── images/
 ├── views/
-│   ├── home.ejs
-│   └── profile.ejs
+│   ├── index.ejs
+│   └── result.ejs
 ├── server.js
 ├── package.json
-└── README.md
+├── package-lock.json
+├── README.md
+└── .gitignore
 ```
 
-## How It Works
+---
 
-1. Enter a Codeforces handle.
-2. The application fetches user information using the Codeforces API.
-3. Contest rating history is retrieved.
-4. Estimated performance is calculated for each contest.
-5. Results are displayed with official Codeforces rating colors.
+## 📊 Data Source
 
-## Future Improvements
+All contest and rating information is fetched from the official Codeforces API.
+
+---
+
+## 🔮 Future Improvements
 
 * Live contest performance tracking
-* Rating graphs and analytics
-* Contest filtering
-* Problem-solving statistics
-* Monthly performance reports
+* Performance graphs and charts
+* Contest filtering by year
+* User comparison feature
+* Problem-solving analytics
+* Rating prediction system
 
- 
+---
+
+## 🤝 Contributing
+
+Contributions, suggestions, and feature requests are welcome.
+
+Feel free to fork the repository and submit a pull request.
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a star on GitHub.
+
+---
+
+
